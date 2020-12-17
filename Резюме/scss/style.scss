@@ -1,0 +1,148 @@
+/*-------------------------------------------Шрифти----------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&display=swap');
+/*-------------------------------------------Стилі-----------------------------------------*/
+body{
+	margin: 0;
+	background: url("../img/design-tools.jpg") 100% 100%;
+}
+.span{
+	font-family: 'Balsamiq Sans';
+	font-weight: 700;
+	font-size: 24px;
+	color: rgb(44, 44, 112);
+}
+
+main {
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+	padding: 2% 0;
+}
+
+.title{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(228, 228, 228);
+	border-radius: 5px;
+	margin-bottom: 5%;
+	box-shadow: 10px 10px  rgb(75, 54, 116);
+	& div{
+		font-family: 'Balsamiq Sans';
+		font-size: 36px;
+		color: rgb(44, 44, 112);
+	}
+}
+
+.info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 5%;
+	&__foto {
+		max-width: 20%;
+		& img{
+			width: 100%;
+		}
+	}
+
+	&__text {
+		background-color: rgb(228, 228, 228);
+		border-radius: 5px;
+		min-width: 60%;
+		flex-grow: 0;
+		padding: 20px 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		box-shadow: 10px 10px  rgb(75, 54, 116);
+	}
+
+	&__item {
+		font-family: "Roboto";
+		font-size: 28px;
+		font-weight: 400;
+		color: rgb(44, 44, 112);
+		margin-bottom: 8px;
+		&:last-child{
+			margin: 0;
+		}
+	}
+}
+
+.text{
+	background-color: rgb(228, 228, 228);
+	box-shadow: 10px 10px  rgb(75, 54, 116);
+	padding: 20px 20px;
+	border-radius: 5px;
+
+	& p {
+		font-family: "Roboto";
+		font-size: 22px;
+	}
+}
+.navigation {
+	margin: 0 0 4% 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+		&__links {
+			min-width: 70%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__link {
+			border-radius: 15px;
+			background-color: #fff;
+			cursor: pointer;
+			color: #000;
+			box-shadow: 4px 4px  rgb(75, 54, 116);
+			& a{
+				border-radius: 15px;
+				padding: 4px 20px;
+				width: 100%;
+				height: 100%;
+				font-size: 20px;
+				font-family: "Roboto";
+				font-weight: 500;
+				text-decoration: none;
+				color: #000;
+				&:visited{
+					color: #000;
+				}
+				&:hover{
+					animation-name: anm__for__menu;
+					animation-duration: 1.5s;
+					animation-fill-mode: forwards;
+				}
+			}
+			&:hover{
+				animation-name: anm__for__menu;
+				animation-duration: 1.5s;
+				animation-fill-mode: forwards;
+			}
+			&:last-child{
+				text-decoration: underline;
+			}
+		}
+}
+
+@keyframes anm__for__menu {
+	0%{
+		background-color: #fff;
+		box-shadow: 4px 4px  rgb(75, 54, 116);
+	}
+	100%{
+		background-color:rgb(75, 54, 116);
+		box-shadow: 4px 4px rgb(228, 228, 228);
+		color: #fff;
+	}
+}
+

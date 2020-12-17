@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/*-----Шрифти-----*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&display=swap");
+/*----------------*/
+.body {
+  border: solid 5px #4BE00F;
+  padding: 20px;
+  width: 1000px;
+  height: auto;
+  margin: 5% auto;
+}
+
+.red {
+  border: solid 5px #EF0A0D;
+  width: 950px;
+  height: 75px;
+  padding: 10px 10px 20px 10px;
+  margin: 0 auto;
+}
+
+.blue {
+  border: solid 5px #3BABF9;
+  width: 200px;
+  padding: 65px 10px 10px 10px;
+  float: left;
+}
+
+.blue__2 {
+  width: 440px;
+  margin: 0 10px;
+}
+
+.blue__3 {
+  padding-top: 5px;
+}
+
+.yellow {
+  border: solid 5px #FAE81E;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.black {
+  margin: 0 auto;
+  border: dashed 1px #000;
+  padding-top: 20px;
+}
+
+.navigation {
+  margin: 2% 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation__links {
+  min-width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation__link {
+  border-radius: 15px;
+  background-color: #fff;
+  cursor: pointer;
+  color: #000;
+}
+
+.navigation__link a {
+  border-radius: 15px;
+  padding: 4px 20px;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+}
+
+.navigation__link a:visited {
+  color: #000;
+}
+
+.navigation__link a:hover {
+  animation-name: anm__for__menu;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.navigation__link:hover {
+  animation-name: anm__for__menu;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.navigation__link:nth-child(4) {
+  text-decoration: underline;
+}
+
+@keyframes anm__for__menu {
+  0% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #4BE00F;
+    color: #fff;
+  }
+}

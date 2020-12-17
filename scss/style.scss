@@ -1,0 +1,188 @@
+/*-----Шрифти-----*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&display=swap');
+/*----------------*/
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #303030;
+}
+.conteiner {
+	width: 90%;
+	margin: 0 auto;
+}
+.block{
+	height: 380px;
+	margin: 4% auto;
+	padding: 2%;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 15px;
+}
+.info{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+.text{
+	font-size: 18px;
+	font-family: "Roboto";
+	max-width: 80%;
+	min-height: 50%;
+}
+.button{
+	border-radius: 15px;
+	background-color: #fff;
+	cursor: pointer;
+	color: #000;
+	& a{
+		border-radius: 15px;
+		padding: 4px 20px;
+		width: 100%;
+		height: 100%;
+		font-size: 20px;
+		font-family: "Roboto";
+		font-weight: 500;
+		text-decoration: none;
+		color: #000;
+		&:visited{
+			color: #000;
+		}
+		&:hover{
+			animation-name: anm__for__menu;
+			animation-duration: 1.5s;
+			animation-fill-mode: forwards;
+		}
+	}
+	&:hover{
+		animation-name: anm__for__menu;
+		animation-duration: 1.5s;
+		animation-fill-mode: forwards;
+	}
+}
+.foto{
+	width: 46%;
+	border-radius: 20px;
+	overflow: hidden;
+	& img{
+		max-width: 100%;
+	}
+}
+
+.navigation {
+	margin: 2% 0 4% 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+		&__links {
+			min-width: 70%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__link {
+			border-radius: 15px;
+			background-color: #fff;
+			cursor: pointer;
+			color: #000;
+			& a{
+				border-radius: 15px;
+				padding: 4px 20px;
+				width: 100%;
+				height: 100%;
+				font-size: 20px;
+				font-family: "Roboto";
+				font-weight: 500;
+				text-decoration: none;
+				color: #000;
+				&:visited{
+					color: #000;
+				}
+				&:hover{
+					animation-name: anm__for__menu;
+					animation-duration: 1.5s;
+					animation-fill-mode: forwards;
+				}
+			}
+			&:hover{
+				animation-name: anm__for__menu;
+				animation-duration: 1.5s;
+				animation-fill-mode: forwards;
+			}
+			&:first-child{
+				text-decoration: underline;
+			}
+		}
+}
+@keyframes anm__for__menu {
+	0%{
+		background-color: #fff;
+	}
+	100%{
+		background-color: #5c6ac5;
+		color: #fff;
+	}
+}
+
+.tovtru {
+
+		&__info {
+		}
+
+		&__text {
+		}
+
+		&__button {
+		}
+
+		&__foto {
+		}
+}
+.cats {
+
+		&__foto {
+		}
+
+		&__info {
+		}
+
+		&__text {
+		}
+
+		&__button {
+		}
+}
+.blocks {
+
+		&__info {
+		}
+
+		&__text {
+		}
+
+		&__button {
+		}
+
+		&__foto {
+		}
+}
+.resume {
+
+		&__foto {
+		}
+
+		&__info {
+		}
+
+		&__text {
+		}
+
+		&__button {
+		}
+}

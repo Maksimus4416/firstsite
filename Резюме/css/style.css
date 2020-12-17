@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/*-------------------------------------------Шрифти----------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&display=swap");
+/*-------------------------------------------Стилі-----------------------------------------*/
+body {
+  margin: 0;
+  background: url("../img/design-tools.jpg") 100% 100%;
+}
+
+.span {
+  font-family: 'Balsamiq Sans';
+  font-weight: 700;
+  font-size: 24px;
+  color: #2c2c70;
+}
+
+main {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  padding: 2% 0;
+}
+
+.title {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4e4e4;
+  border-radius: 5px;
+  margin-bottom: 5%;
+  box-shadow: 10px 10px #4b3674;
+}
+
+.title div {
+  font-family: 'Balsamiq Sans';
+  font-size: 36px;
+  color: #2c2c70;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.info__foto {
+  max-width: 20%;
+}
+
+.info__foto img {
+  width: 100%;
+}
+
+.info__text {
+  background-color: #e4e4e4;
+  border-radius: 5px;
+  min-width: 60%;
+  flex-grow: 0;
+  padding: 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 10px 10px #4b3674;
+}
+
+.info__item {
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 400;
+  color: #2c2c70;
+  margin-bottom: 8px;
+}
+
+.info__item:last-child {
+  margin: 0;
+}
+
+.text {
+  background-color: #e4e4e4;
+  box-shadow: 10px 10px #4b3674;
+  padding: 20px 20px;
+  border-radius: 5px;
+}
+
+.text p {
+  font-family: "Roboto";
+  font-size: 22px;
+}
+
+.navigation {
+  margin: 0 0 4% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation__links {
+  min-width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation__link {
+  border-radius: 15px;
+  background-color: #fff;
+  cursor: pointer;
+  color: #000;
+  box-shadow: 4px 4px #4b3674;
+}
+
+.navigation__link a {
+  border-radius: 15px;
+  padding: 4px 20px;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+}
+
+.navigation__link a:visited {
+  color: #000;
+}
+
+.navigation__link a:hover {
+  animation-name: anm__for__menu;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.navigation__link:hover {
+  animation-name: anm__for__menu;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.navigation__link:last-child {
+  text-decoration: underline;
+}
+
+@keyframes anm__for__menu {
+  0% {
+    background-color: #fff;
+    box-shadow: 4px 4px #4b3674;
+  }
+  100% {
+    background-color: #4b3674;
+    box-shadow: 4px 4px #e4e4e4;
+    color: #fff;
+  }
+}

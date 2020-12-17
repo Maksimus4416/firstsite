@@ -1,0 +1,81 @@
+/*-----Шрифти-----*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&display=swap');
+/*----------*/
+.conteiner{
+	width: 90%;
+	margin: 0 auto;
+}
+
+body{
+	background-color: #303030;
+}
+
+h1{
+	text-align: center;
+	color: #ee111e;
+}
+h2{
+	text-align: start;
+	color: #ee111e;
+}
+p{
+	font-size: 24px;
+	color: #eeeeee;
+}
+.navigation {
+	margin: 2% 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+		&__links {
+			min-width: 70%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__link {
+			border-radius: 15px;
+			background-color: #fff;
+			cursor: pointer;
+			color: #000;
+			& a{
+				border-radius: 15px;
+				padding: 4px 20px;
+				width: 100%;
+				height: 100%;
+				font-size: 20px;
+				font-family: "Roboto";
+				font-weight: 500;
+				text-decoration: none;
+				color: #000;
+				&:visited{
+					color: #000;
+				}
+				&:hover{
+					animation-name: anm__for__menu;
+					animation-duration: 1.5s;
+					animation-fill-mode: forwards;
+				}
+			}
+			&:hover{
+				animation-name: anm__for__menu;
+				animation-duration: 1.5s;
+				animation-fill-mode: forwards;
+			}
+			&:nth-child(2){
+				text-decoration: underline;
+			}
+		}
+}
+
+@keyframes anm__for__menu {
+	0%{
+		background-color: #fff;
+	}
+	100%{
+		background-color: #ee111e;
+		color: #fff;
+	}
+}
